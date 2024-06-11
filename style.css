@@ -1,0 +1,39 @@
+h3{
+    color:blue;
+    
+}
+p,a,hr{
+    color:rgb(46, 116, 163);
+    font-family: monospace;
+}
+li{
+    list-style-type:decimal;
+}
+/*span.special,li.special{
+   color:orange;
+   font-weight: bold; 
+}
+.special{
+   color:rgb(50, 199, 75);
+   font-weight: bold; 
+}*/
+li em{
+    color: rebeccapurple;
+    font-weight: bold;
+}
+h4+p{
+    font-size: 200%;
+}
+a:hover{
+    color:salmon;
+    text-decoration:none ;
+}
+h4, .special{
+    color:rebeccapurple;
+    background-color: black;
+    padding: 5px;
+}
+#heading{
+    color:rebeccapurple;
+    background-color: black;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>web dev 3</title>
+</head>
+<body>
+    <form action=""> <!--action=the server where we'll send the data to-->
+        <h2>payment form</h2>
+        <h3>contact info</h3>
+        <!--to take input from the user, we use input-->
+        <!--general structure: <input type name-->
+        <!--type=the type of input we'll take
+        name= input data goes via "name" to the server, kinda like the data type for c++-->
+        <p>*name: <input type="text" name="name" required></p>
+        <!--a text type input with a type name "name"-->
+        <!--text=text
+        password=hidden text
+        radio-single choice
+        checkbox=multiple choice
+        file=to let the user upload files
+        submit=to pass all the input info to server
+        reset=to reset the form
+        image= clickable picture
+        textarea= to write a big text-->
+        <!--"select" element is used to make a dropdown box-->
+        <!--"name" attribute value has to be different for every input type(same goes for "id") but for single choice input, we have to use same "name" value-->
+    <fieldset><!--to wrap a statement, we use "fieldset"
+    and to give a name to the wrap, we use "legend"-->
+        <legend>*gender</legend>
+        <p>male <input type="radio" name="gender" id="male" required>
+            female <input type="radio" name="gender" id="female" required></p>
+    </fieldset>
+    <p>*address: <textarea name="address" id="address" cols="100" rows="10" required></textarea></p>
+    <p>email: <input type="email" name="email" id="email" required></p>
+    <!--"email" attribute tells you if the input email is right or wrong-->
+    <p>pincode <input type="number" name="pincode" id="pincode" required></p>
+    <h3>payment info</h3>
+    <p>card type: <select name="card_type" id="card_type" required>
+        <option value="">-select a card type-</option>
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <!--same as "name" for "value" -->
+    </select></p>
+    <p>card number <input type="number" name="card_number" id="card_number" required></p>
+    <p>expiration date: <input type="date" name="exp_date" id="exp_date" required></p>
+    <p>cvv <input type="password" name="cvv" id="cvv" required></p>
+    <input type="submit" value="pay now">
+    </form>
+</body>
+</html>
