@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web dev 11</title>
+    <style>
+       /*@media screen and (max-width: 600px),screen and (orientation:landscape) {
+        body{
+            color: blue;
+        }
+       }*/
+       /*@media not all and (orientation: landscape){
+        body{
+            color: blue;
+        }
+       }*/
+       * {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px Georgia, serif;
+  background: #ccc;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+h2 {
+  font: 24px Georgia;
+  margin: 0 0 10px 0;
+}
+h3 {
+  margin: 0 0 8px 0;
+}
+p {
+  margin: 0 0 20px 0;
+}
+
+#fluid-wrap {
+  width: 70%;
+  margin: 60px auto;
+  padding: 20px;
+  background: #eee;
+  overflow: hidden;
+}
+
+#sidebar {
+  width: 35%;
+  float: left;
+}
+
+#sidebar ul {
+  list-style: none;
+}
+
+#sidebar ul li a {
+  color: #900;
+  text-decoration: none;
+  padding: 3px 0;
+  display: block;
+}
+
+@media all and (min-width: 1001px) {
+  #sidebar ul li a:after {
+    content: " (" attr(data-email) ")";
+    font-size: 11px;
+    font-style: italic;
+    color: #666;
+  }
+}
+
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  #sidebar ul li a:before {
+    content: "Email: ";
+    font-style: italic;
+    color: #666;
+  }
+}
+
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  #sidebar ul li a {
+    padding-left: 21px;
+    background: url(assets/email.png) left center no-repeat;
+  }
+}
+
+#main-content {
+  width: 65%;
+  float: right;
+}
+    </style>
+</head>
+<body>
+    <div id="fluid-wrap">
+  
+        <div id="sidebar">
+          <h3>Team Apna College:</h3>
+          <ul id="nav">
+             <li><a data-email="dhattarwalaman97@gmail.com" href="mailto:amandhattarwal97@gmail.com">Aman Dhattarwal</a></li>
+             <li><a data-email="rahulneha@likeher.com" href="mailto:rahulneha@likeher.com">Rahul Kumar</a></li>
+             <li><a data-email="neharahul@me.com" href="mailto:neharahul@me.com">Neha Sharma</a></li>
+          </ul>
+        </div>
+      
+        <div id="main-content">
+            <p>Black made a startled movement that almost dislodged Crookshanks; Harry gripped his wand convulsively — do it now! said a voice in his head — but the footsteps were thundering up the stairs and Harry still hadn’t done it.
+
+                The door of the room burst open in a shower of red sparks and Harry wheeled around as Ron came limping in, Riddikulus still clutched in his hand. There was a scramble as everyone tried to get out of his way and Ron toppled into a rickety wardrobe, the contents of which fell out in a tangle of robes and moth-eaten rags.
+                
+                “We thought you were staying with your aunt and uncle!” said Ron, watching Harry apprehensively.
+                
+                “I wish I had!” said Harry. “I’d have had a happier time staying with the Dursleys ...”
+                
+                Ron’s jaw dropped.
+                
+                “Hang on,” he said slowly, “Black’s here. He’s right here. And Harry’s not doing anything about it ... because he thinks Black’s innocent. Yes?”
+                
+                “Yes,” said Harry.</p>
+        </div>
+      
+      </div>
+</body>
+</html>
