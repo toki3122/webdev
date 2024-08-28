@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>web dev</title>
+    <style>
+        *{
+            box-sizing: border-box;/*very important*/
+            list-style: none;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: rgb(8, 32, 59);
+        }
+        nav{
+            display: flex;
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            float: left;
+        }
+        section{
+            text-align: center;
+            min-height: 40vh;
+        }
+        section:nth-child(even){
+            background-color: rgb(0, 0, 0);
+            padding-bottom: 10px;
+            
+        }
+        img{
+            padding: 0px 5px;
+        }
+        h2{
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+        footer{
+            overflow: hidden;
+            background-color: #333;
+        }
+        footer a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            float: left;
+        }
+        .copy{
+            float: right;
+        }
+        .banner{
+            background-image: url(assets/200.webp);
+            height: 20vw;
+            min-height: 100px;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-attachment: fixed;
+        }
+        .align{
+            margin-left: auto;
+        }
+        .menubtn:hover{
+            background-color: white;
+            color: black;
+        }
+        .align:hover{
+            background-color: white;
+            color: black;
+        }
+        section h2 span{
+            background: rgb(255, 255, 255);
+background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        * { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+.carousel-cell {
+  width: 66%;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.carousel-cell video{
+    max-width: 100%;
+}
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 */
+  position: relative;
+  width: 100%;
+} 
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+h3{
+    font-weight: 900;
+}
+.img-responsive{
+    max-width: 100vh;
+    height: 100vh;
+}
+.box{
+    border-radius: 50%;
+}
+.tag a{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.tag a:hover{
+    background-color: rgb(30,30,30/25%);
+}
+.tag a i{
+    margin: 5px 10px;
+}
+#ytlogo{
+    color: #FF0000;
+}
+#inlogo{
+    color: #0077B5;
+}
+#iglogo{
+    color:rgb(243, 71, 128);
+}
+#fblogo{
+    color: #4267B2;
+}
+@media screen and (max-width: 700px){
+            nav{
+                flex-direction: column;
+                text-align: center;
+                padding: 10px 0px;
+            }
+            .align{
+                margin-left: 0;
+            }
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="banner"></div>
+    </header>
+    <nav>
+        <a href="#" class="menubtn">home</a>
+        <a href="#" class="menubtn">college reviews</a>
+        <a href="#" class="menubtn">study materials</a>
+        <a href="#" class="align">login/signup</a>
+    </nav>
+    <main>
+    <section>
+        <h2><span>Courses</span></h2>
+        <div class="carousel"
+  data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell"><video src="assets/マイクロマウス2020 ロボトレース競技用動画2.mp4" loop controls></video>
+  </div>
+  <div class="carousel-cell"><video src="assets/line follower robot GRUZIK0.5.mp4" controls></video>
+  </div>
+  <div class="carousel-cell"><video src="assets/lfrvideo.mp4" controls></video></div>
+  <div class="carousel-cell"><video src="assets/マイクロマウス2020 ロボトレース競技用動画2.mp4" loop controls></video></div>
+  <div class="carousel-cell"><video src="assets/line follower robot GRUZIK0.5.mp4" controls></video></div>
+  <div class="carousel-cell"><video src="assets/lfrvideo.mp4" controls></video></div>
+</div>
+    </section><br><br>
+    <section>
+        <h2><span>College reviews</span></h2>
+        <div class="carousel"
+  data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/61ppyY5rUB0?si=6IyOzeKXDAk8CL6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/61ppyY5rUB0?si=6IyOzeKXDAk8CL6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/35nV_M3asRs?si=6L_NMMX0KDy62Exp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/35nV_M3asRs?si=6L_NMMX0KDy62Exp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>        
+    </section><br><br>
+    <section>
+        <h2><span>Study materials</span></h2>
+        <div class="carousel"
+  data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell"><a href="assets/Beiser-conceptsofmodernphysics.pdf" target="blank"><img src="assets/grass.png" alt="" class="img-responsive"></a>
+  </div>
+  <div class="carousel-cell"><a href="assets/Beiser-conceptsofmodernphysics.pdf" target="blank"><img src="assets/grass.png" alt="" class="img-responsive"></a>
+  </div>
+  <div class="carousel-cell"><a href="assets/Beiser-conceptsofmodernphysics.pdf" target="blank"><img src="assets/grass.png" alt="" class="img-responsive"></a></div>
+  <div class="carousel-cell"><a href="assets/Beiser-conceptsofmodernphysics.pdf" target="blank"><img src="assets/grass.png" alt="" class="img-responsive"></a></div>
+</div>
+    </section><br><br>
+    <section style="background-color: white;">
+        <h2><span>Our Founder</span></h2><br>        
+        <div><img src="assets/download.png" alt="" class="box"></div><br>
+        <h3><b>MD AHNAF HOSSAIN</b></h3>
+        <div class="tag">
+            <a href="https://www.facebook.com"> <i class="fa fa-lg fa-facebook" id="fblogo"></i></a>&nbsp;|&nbsp;  
+        <a href="https://www.linkedin.com"><i class="fa fa-lg fa-linkedin" id="inlogo"></i></a>  &nbsp;|&nbsp; 
+        <a href="https://www.instagram.com"><i class="fa fa-lg fa-instagram" id="iglogo"></i></a> &nbsp;|&nbsp;
+        <a href="https://www.youtube.com"><i class="fa fa-lg fa-youtube" id="ytlogo"></i></a>   &nbsp;&nbsp;
+        </div>
+    </section>
+</main>
+<footer>
+    <a href="#" class="menubtn">FAQs</a>
+    <a href="#" class="menubtn">Contact us</a>
+    <a href="#" class="menubtn">Terms of use</a>
+    <a href="#" class="menubtn">Privacy policy</a>
+    <a href="#" class="menubtn">Refund policy</a>
+    <a class="copy" href="#">&copy; 2024 | all rights reserved</a>
+</footer>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+</html>

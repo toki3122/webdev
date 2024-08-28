@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lament</title>
+    <style>
+        @media screen and (max-width:1100px ) {
+            .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }}
+        @media screen and (max-width:600px ) {
+            .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }}
+        @media screen and (max-width:400px ) {
+            .container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }}
+        
+        .item1 {
+            background-color: rgb(219, 219, 219);
+            padding: 20px;
+            text-align: center;
+        }
+            .item2 {
+            background-color: rgb(145, 145, 145);
+            padding: 20px;
+            text-align: center;
+            }
+            .item3 {
+            background-color: rgb(121, 121, 121);
+            padding: 20px;
+            text-align: center;
+            }
+            .item4 {
+            background-color: rgb(102, 102, 102);
+            padding: 20px;
+            text-align: center;
+            }
+        .biznatch{
+            color: rgb(156, 9, 9);
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">name 1 <p class="biznatch">name 1</p> </div> 
+        <div class="item2">name 2 <p class="biznatch">name 2</p> </div> 
+        <div class="item3">name 3 <p class="biznatch">name 3</p> </div> 
+        <div class="item4">name 4 <p class="biznatch">name 4</p> </div> 
+    </div>
+</body>
+</html>
