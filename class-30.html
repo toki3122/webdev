@@ -8,17 +8,26 @@
 <body>
     
     <script>
-        function makecoffee(coffee,sugar,cream,water){
+        function makecoffee(coffee,sugar,cream,water){//function *function name* (*variable names*)
             console.log("your coffee will be ready in"
                 +(coffee*2+sugar+cream+(water/100))
                 +" minutes"
                 +" and used ingredients are "
-                +coffee+"oz of coffee"
-                +water+"ml of water"
-                +sugar+"tsp of sugar"
-                 +"with no cream"
+                +coffee+" oz of coffee "
+                +water+" ml of water "
+                +sugar+" tsp of sugar "
+                 +" with no cream"
             )
         }
+        let bread1= prompt("which bread would you like to have?");
+        let veggies1= prompt("which veggies would you like to have?");
+        let sauce1= prompt("which sauce would you like to have?");
+        function makesandwich(bread, veggies, sauce){
+            let sandwich= bread+" bread"+" "+veggies+" "+sauce+" sandwich ";
+            return sandwich;
+        }
+        let vegsandwich=makesandwich(bread1,veggies1,sauce1);
+        console.log(vegsandwich);
         makecoffee(15,1,0,150);
     </script>
 </body>
